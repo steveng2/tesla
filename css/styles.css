@@ -6,7 +6,7 @@ body {
   -moz-background-size: cover;
   background-size: cover;
 }
-
+/* nav styles */
 nav {
 	display: inline;
 	text-align: center;
@@ -23,9 +23,45 @@ nav #main{
 	display: inline;
 	margin: 20px;
 	text-decoration: none;
+	text-transform: uppercase;
 }
-
-h1 {position: absolute; top: 150px; left: 200px;
+nav #main.nav-button-login {
+	display: inline;
+	margin: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.nav-button-login a:hover{
+	text-align-last: right;
+	color: #999;
+}
+.nav-button-login {
+	text-align: right;
+	align-items: flex-end;
+	text-transform:  uppercase;
+	text-decoration: none;
+}
+.nav-button a:hover {
+	display: inline;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #999;
+	text-transform: uppercase;;
+}
+nav .logo-small {
+	height: 10px;
+	width: 50px;
+}
+.logo-small {
+	height: 10px;
+	width: 50px;
+	text-overflow: ellipsis;
+}
+li.nav-button-login{
+	 text-decoration: none;
+}
+h1 {
+	position: absolute; top: 150px; left: 200px;
 	display: block;
 	color: #FFF;
 	font-size: 27px;
@@ -37,15 +73,24 @@ h1 {position: absolute; top: 150px; left: 200px;
 }
 #products, a, .btnstyle {
 	padding: 0.2em;
-	color: #fff;
+	color: #FFF;
 	text-decoration: none;
 }
 
 .btnstyle {
 	background: #000;
-	opacity: 0.5;
+	opacity: 0.8;
+	margin-left: 15px;
+	padding: 0.6em;
+	text-transform: uppercase;;
+}
+a.btnstyle:hover {
+	background: #000;
+	opacity: 0.8;
 	margin-left: 20px;
 	padding: 0.6em;
+	border: solid white 1px;
+	text-transform: uppercase;
 }
 a.linktesla {
 	position: absolute; top: 100px; left: 200px;
